@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply bg-[#ecf1fe];
+    }
+}
+
+@layer utilities {
+    .posts-smaller {
+        @apply grid-cols-1;
+    }
+
+    .posts-sm {
+        @apply grid-cols-2 mx-6 gap-5;
+    }
+
+    .posts-md-sm {
+        @apply grid-cols-3 mx-5;
+    }
+
+    .posts-md-lg {
+        @apply grid-cols-2 mx-0;
+    }
+
+    .posts-xl {
+        @apply  grid-cols-3 grid-rows-2;
+    }
+
+    .comments-container {
+        scrollbar-width: thin;
+        scrollbar-color: #b6b6b6 transparent;
+    }
+
+    .recommended-posts-ul {
+        scrollbar-width: thin;
+        scrollbar-color: #b6b6b6 transparent;
+    }
+}
